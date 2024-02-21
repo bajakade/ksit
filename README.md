@@ -4,10 +4,13 @@
 ## Basic Commands
 
 `clear` clear the screen
+
 `ls` means list current directory content. 
 
 `cd` means change directory is a command used to move between folders. e.g
+
 `cd project` # change to project directory
+
 `cd ../` # move back to parent directory
 
 ## Git
