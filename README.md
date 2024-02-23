@@ -18,3 +18,18 @@
 To clone(copy) the git repo using `ssh`  use `git clone` command as shown below
 
 `git clone git@github.com:bajakade/ksit.git`
+
+Git init
+
+Git branch
+
+Git pull
+
+Git push
+
+Git Checkout
+
+Git commit
+
+Git add
+
