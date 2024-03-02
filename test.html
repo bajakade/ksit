@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+      <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        div:nth-child(2) {
+            background-color: rgb(192, 67, 67);
+            margin-left: 100px;
+        }
+
+        div:nth-child(3) {
+            background-color: rgb(78, 78, 218);
+            margin-left: 90px;
+            z-index: 2;
+            position: relative;
+            top: -90px;
+        }
+      </style>
+       
+    </head>
+    <body>
+        <h2>Stacked</h2>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <button>Animated</button>
+    </body>
+</html>

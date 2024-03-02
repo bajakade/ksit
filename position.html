@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+       <style>
+            body {
+                padding-left: 30%;
+            }
+            div {
+                line-height: 10px;
+                margin-top: 50px;
+            }
+            .relative {
+                position: relative;
+                left: -30px;
+                bottom: 20px;
+            }
+            #fixed {
+                position: fixed;
+                right: 0px;
+                top: 0px;
+            }
+            #parent{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 5px solid #000000
+            }
+            .abs {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+            }
+            img {
+                position: relative;
+                bottom: 100px;
+                left: -50px;
+                z-index: -1000;
+            }
+
+            #mytitle{
+                position: absolute;
+                top: 0;
+                left: -10px;  
+                z-index: 1;  
+            }
+            #myintro{
+                position: absolute;
+                top: 0;
+                left: -10px;  
+                z-index: 0;
+            }
+       </style>
+        
+    </head>
+    <body>
+       <h3>CSS Positioning</h3>
+
+       <div>
+            <h4>Static</h4>
+            <p>Static paragraph</p>
+       </div>
+
+       <div>
+            <h4>Relative</h4>
+            <p>Normal paragraph</p>
+            <p class="relative">Relative paragraph</p>
+       </div>
+
+       <div>
+            <p id="fixed"> Fixed positioned element</p>
+       </div>
+
+       <div id="parent">
+         This <div class="abs"> element has position: absolute </div>
+       </div>
+       <div>
+            <h1>Z index</h1>
+            <p>Normal paragraph</p>
+            <img src="/images/facebook-logo.png" />
+       </div>
+
+       <div>
+            <h1 id="mytitle">This is a heading</h1>
+            <p id="myintro">This is a paragraph</p>
+        </div>
+    </body>
+</html>
