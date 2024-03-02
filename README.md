@@ -25,6 +25,19 @@ To clone(copy) the git repo using `ssh`  use `git clone` command as shown below
     `ssh-keygen -t rsa -b 1024`
 where `-t` flag option indicates the type of algorithm which is `rsa` in the above example and `-b` indicates the size of the key in bits
 
+Git init
+
+Git branch
+
+Git pull
+
+Git push
+
+Git Checkout
+
+Git commit
+
+Git add
+
 ## Navigation Bar
 this is a menu bar commonly place at the top of many website/web applications to easy site navigation
-
