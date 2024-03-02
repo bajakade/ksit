@@ -18,3 +18,12 @@
 To clone(copy) the git repo using `ssh`  use `git clone` command as shown below
 
 `git clone git@github.com:bajakade/ksit.git`
+
+## SSH Configuration
+#### Generate keys
+- To generate an ssh key use the `ssh-keygen` utility
+    `ssh-keygen -t rsa -b 1024`
+where `-t` flag option indicates the type of algorithm which is `rsa` in the above example and `-b` indicates the size of the key in bits
+
+## Navigation Bar
+
