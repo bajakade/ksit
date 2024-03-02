@@ -26,4 +26,5 @@ To clone(copy) the git repo using `ssh`  use `git clone` command as shown below
 where `-t` flag option indicates the type of algorithm which is `rsa` in the above example and `-b` indicates the size of the key in bits
 
 ## Navigation Bar
+this is a menu bar commonly place at the top of many website/web applications to easy site navigation
 
