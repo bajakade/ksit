@@ -87,14 +87,14 @@ example
 }
 
 /* Create four equal columns */
-.column {
+.columnumn {
   flex: 25%;
   padding: 20px;
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
-  .column {
+  .columnumn {
     flex: 50%;
   }
 }
@@ -106,5 +106,13 @@ example
   }
 }
 ```
+
+### Screen Sizes
+
+- 320px — 480px: Mobile devices
+- 481px — 768px: iPads, Tablets
+- 769px — 1024px: Small screens, laptops
+- 1025px — 1200px: Desktops, large screens
+- 1201px and more —  Extra large screens, TV
 
 source [W3 School](https://www.w3schools.com/css/css3_mediaqueries.asp)

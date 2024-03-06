@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <style>
+            #div {
+                border: dotted 5px red;
+                width: 200px
+            }
+
+
+            p {
+                border: solid 5px;
+                width: 100%;
+                padding: 10px;
+                /* margin: 30px; */
+                box-sizing: border-box;
+            }
+            /* final width of the paragrap
+                200 + 10 + 30 = 240
+            */
+            #fixed-width {
+                border: dotted 1px green;
+                width: 1000px;
+                min-width: 100px;
+                height: 30px;
+            }
+            ul {
+                background-color: gray;
+                padding: 0px;
+                margin: 0px;
+                position: fixed;
+                width: 100%;
+            }
+            li {
+                list-style-type: none;
+                display: inline;
+            }
+            li a {
+                text-decoration: none;
+                color: aliceblue;
+                display: inline-block;
+                padding: 10px 20px;
+            
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center ;
+                margin-top: 100px;
+            }
+            .column {
+                line-height: 200px;
+                text-align: center;
+                height: 200px;
+                width: 33%;
+                background-color: gray;
+                margin: 5px 3px;
+                color: aliceblue;
+                font-size: x-large;
+            }
+
+            @media print and (orientation: landscape) {
+                li {
+                    display: block;
+                }
+                .column {
+                    background-color: gray;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                .column {
+                    background-color: red;
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .column {
+                    width: 50%;
+                };
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Box sizing</h3>
+        <div>
+            <p>This is a paragraph. This is another sentence within the paragraph</p>
+        </div>
+
+        <h3>Max/Min Width</h3>
+        <div id="fixed-width">
+
+        </div>
+
+        <h3>Media Query</h3>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+       </ul>
+        <div class="row">
+            <div class="column">1</div>
+            <div class="column">2</div>
+            <div class="column">3</div>
+            <div class="column">4</div>
+        </div>
+        
+    </body>
+</html
