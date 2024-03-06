@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: blueviolet;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        form{
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 3rem;
+            padding: 2.5rem;
+            background-color: #fff;
+        }
+
+        h1{
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        span{
+            color: black;
+        }
+
+        .form-group{
+           height: 100vh;
+           text-align: center;
+        }
+
+        label{
+            display: block;
+            text-align: left;
+            font-size: 1.5rem;
+        }
+
+        input, textarea{
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin-top: 10px;
+            background: rgb(52, 52, 175);
+            color: black;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: #333 5px 3px 2px;
+        }
+
+        .btn:hover{
+            padding: 0.7rem;
+            background: blue;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="form-group">
+        <form>
+            <h1>How to <span>Contact</span> me</h1>
+            <div class="form-wrap">
+                <label for="name">Name</label>
+                <input type="name" placeholder="Type your name" />
+            </div>
+    
+            <div class="form-wrap">
+                <label>Email Address</label>
+                <input type="email" placeholder="Type your email address" />
+            </div>
+    
+            <div class="form-wrap">
+                <label for="message">Message</label>
+                <textarea cols="20" rows="20"></textarea>
+            </div>
+    
+            <button type="btn" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
