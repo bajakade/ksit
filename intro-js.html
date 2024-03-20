@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Frontend Class</title>
+        <style>
+            #heading {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--headings-->
+        <h1 id="heading">Introduction to JS</h1>
+
+    </body>
+    <script>
+        // single line comment
+
+        /*
+            Multiline comments
+            another line
+            another
+        */
+
+       /*
+            Syntax -> grammar
+            Symantic -> rule or meaning
+       */
+
+
+
+       /*
+            Variable name rules
+                - A variable name is a string with the below exception
+                - A variable cannot start with a number.
+                    wrong: var 1name = 'Ismail'
+                    right: var na1me1 = 'Ismail'
+                - There can be no space between the name
+                    wrong: var full name = 'Ismail MK'
+                    right: var full_name = 'Ismail MK'
+                    right: var fullName = 'Ismail MK'
+
+                - it cannot container brackets `{}`, `()`
+                - It cannot be a `reserved word`
+                    e.g `true or false for boolean variables
+                    other examples of a reserver words are `if`, `while`,  `var`, `continue`   
+        */
+        // x = 2;
+        // a string variable assignment
+        var name = 'Ismail MK Ahmad';
+        
+
+        //  a number variable
+        var age = 20;
+
+        // boolean type takes max of two possible values true or false
+        var presence = false;
+
+
+        // a string variable assignment
+        var name1 = 'Yusuf Sulaiman';
+        
+
+        //  a number variable
+        var age2 = 25;
+
+        // boolean type takes max of two possible values true or false
+        var presence2 = true;
+        // JS has a set of "reserved word" that are not available for use
+        // the next line variablee assignment will throw an error
+        // var false;
+        
+        
+        // object variable
+        // informally it is a varible that has multiple variables under the same name
+        var person1 = {name: 'Ismail MK Ahmad', age: 20, present: true, gender: 'Male'}
+        var person2 = {name: 'Yusuf Sulaiman', age: 25, present: true, gender: 'Male'}
+        var person3 = {name: 'Amina Sulaiman', age: 25, present: true, gender: 'Female'}
+
+        // DOM: the next line is used to get reference to an html tag in our document
+        var heading = document.getElementById('heading')
+        var text = heading.innerText;
+
+        console.log(text)
+        console.log(person1)
+    </script>
+</html>
