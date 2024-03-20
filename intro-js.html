@@ -11,6 +11,11 @@
     <body>
         <!--headings-->
         <h1 id="heading">Introduction to JS</h1>
+        <p id="para1"></p>
+        <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
 
     </body>
     <script>
@@ -78,10 +83,20 @@
         var person3 = {name: 'Amina Sulaiman', age: 25, present: true, gender: 'Female'}
 
         // DOM: the next line is used to get reference to an html tag in our document
+        // reading from our document
         var heading = document.getElementById('heading')
-        var text = heading.innerText;
+        // heading = { innerText: 'Introduction to JS' }
 
-        console.log(text)
-        console.log(person1)
+        console.log(heading.innerHTML)
+        console.log(person1.name)
+        console.log(person1.age)
+        console.log(person1.gender)
+
+        // writing to document
+        document.getElementById('para1').innerText = 'The paragraph has been assigned a string text';
+
+        var g = document.getElementById('gender');
+        console.log(g.innerHTML)
+        
     </script>
 </html>
