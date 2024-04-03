@@ -61,5 +61,9 @@ function printGradeMessage() {
     document.getElementById('score-message').innerText = message
 }
 
+function highlight() {
+    document.getElementsByTagName('input')[0].style.backgroundColor = 'pink'
+}
+
 
 
