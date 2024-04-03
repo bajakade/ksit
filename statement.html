@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Frontend Class</title>
+        <style>
+            #heading {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--headings-->
+        <h1 id="heading">Conditional Statement</h1>
+        <p id="greeting"></p>
+        <label>What time is it?</label>
+        <select id="time" onchange="getSelected()">  
+            <option>08:00 AM</option>
+            <option>10:00 AM</option>
+            <option>12:00 PM</option>
+            <option>02:00 PM</option>
+            <option>08:00 PM</option>
+
+        </select>
+
+        <br><br>
+        <label>What was you Frontend score ?</label>
+        <input type="string"  id='grade' />
+        <button onclick="printGradeMessage()">Submit</button>
+        <p id="score-message"></p>
+    </body>
+    <script src="./js/conditional-statements.js"></script>
+</html>
