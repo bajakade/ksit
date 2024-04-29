@@ -116,3 +116,46 @@ example
 - 1201px and more —  Extra large screens, TV
 
 source [W3 School](https://www.w3schools.com/css/css3_mediaqueries.asp)
+
+## JS *if...else*
+Conditional statements are used to perform different actions based on different conditions.
+
+Use the `if` statement to specify a block of JavaScript code to be executed if a condition is true.
+Use the `else` statement to specify a block of code to be executed if the condition is false.
+
+### Syntax
+```
+if (condition) {
+  //  block of code to be executed if the condition is true
+} else {
+  //  block of code to be executed if the condition is false
+}
+```
+### Example
+If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":
+```
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+```
+
+## The For Loop
+The for statement creates a loop with 3 optional expressions:
+```
+for (expression 1; expression 2; expression 3) {
+  // code block to be executed
+}
+```
+
+- Expression 1 is executed (one time) before the execution of the code block.
+- Expression 2 defines some boolean condition to be satisfied for executing the code block.
+- Expression 3 is executed (every time) after the code block has been executed.
+
+### Example
+```
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+```
