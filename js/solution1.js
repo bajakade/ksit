@@ -35,3 +35,16 @@ p.style.border = 'solid 2px yellow';
 p.innerText = averageStatement;
 
 appendTo('result', p);
+
+const list = ['Bashir', 'Ibrahim', 'Musa', 'Dederi'];
+const dataList = document.getElementById('options')
+document.getElementsByName('mylist')[0].addEventListener('input', (e) => {
+    const text = e.target.value
+    if(text !== "") {
+        dataList.innerHTML = list
+        .filter(item =>item.toLowerCase().includes(text.toLowerCase()))
+        .reduce((all, next) => `${all}<option>${next}</option>`, '')
+    } else {
+        dataList.innerHTML = ""
+    }
+})

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Animations</title>
+        <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+        <style>
+            /* Define animation */
+            @keyframes bounce {
+                from {top: 200px; background-color: red;}
+                to {top: 0px; background-color: blue;}
+            }
+
+            #square {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                left: 100px;
+                top: 200px;
+                background-color: red;
+                border-radius: 20px;
+                font-size: 8px;
+                color: white;
+                line-height: 50px;
+                text-align: center;
+                opacity: 1;
+                animation-name: bounce;
+                animation-duration: 2s;
+                /* animation-delay: -2s; */
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: linear;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h3>CSS Animations</h3>
+
+        <div id="square"></div>
+    </body>
+</html>
