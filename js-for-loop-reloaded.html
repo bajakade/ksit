@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+      <style>
+       
+      </style>
+       
+    </head>
+    <body>
+        <h2>JavaScript Timers</h2>
+        <h2>Another heading</h2>
+        <h2>Final heading</h2>
+        <ul>
+            <li>The <strong>setTimeout()</strong> method calls a function after a number of milliseconds.</li>
+        </ul>
+        We use setTimeout to delay an action
+        <h3>Greeting</h3>
+        <p id="message"></p>
+    </body>
+    <script>
+        const greeting = 'Hello students';
+
+        // sayHello function definition
+        function logH2() {
+            let h2 = document.getElementsByTagName('h2');
+            // h2 = [...] // list of three items
+            // For loop
+            // 1. initialization
+            // 2. condition to keeping looping
+            // 3. what to do after each iteration
+            for(let i=0; i < h2.length;) {
+                console.log(h2[i])
+                 i++;
+            }
+            const ingredient = ['Eggs', 'flour', 'sugar', 'salt', 'baking-powder', 'butter']
+            // search for existance of sugar on the list
+            for(let i=0; ingredient[i] != 'sugar' && i < ingredient.length; i++) {
+                console.log('The current item is ' + ingredient[i])
+              if(ingredient[i] == 'sugar')  {
+                console.log('There is sugar at index ' + i)
+              } 
+            }
+         }
+        // call logH2
+        logH2();
+    </script>
+</html>
